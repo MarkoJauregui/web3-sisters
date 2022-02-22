@@ -1,21 +1,25 @@
-import React from 'react';
-import { CTA, Navbar } from './components';
-import { Features, Footer, Header, Possibility, WhatWeb3 } from './containers';
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => {
-	return (
-		<div className="App">
-			<div className="gradient__bg">
-				<Navbar />
-				<Header />
-			</div>
-			<WhatWeb3 />
-			<Features />
-			<Possibility />
-			<CTA />
-			<Footer />
-		</div>
-	);
-};
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
