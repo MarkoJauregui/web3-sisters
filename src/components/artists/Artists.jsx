@@ -1,7 +1,11 @@
 import './artists.scss';
 
 const Artists = () => {
-	return <div className="artists">artists</div>;
+	return (
+		<div className="artists" id="artists">
+			artists
+		</div>
+	);
 };
 
 export default Artists;

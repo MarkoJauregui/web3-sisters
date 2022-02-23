@@ -1,5 +1,9 @@
 import './sisters.scss';
 
 export default function Sisters() {
-	return <div className="sisters">sisters</div>;
+	return (
+		<div className="sisters" id="sisters">
+			sisters
+		</div>
+	);
 }
