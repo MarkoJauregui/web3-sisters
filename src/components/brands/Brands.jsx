@@ -25,12 +25,12 @@ export default function Brands() {
 						they mean for brands, companies and institutions? Where are the
 						cross-overs that exist with real life communities, and how can those
 						relationships be nurtured? How can art express values and help build
-						new spaces for them to be shared.
+						new spaces for them to be shared?
 						<br />
 						<br />
 						Web3Sisters will help you navigate these questions and create
 						customised NFT strategies for your brand, company or institution,
-						while creating opportunities for emerging artist.
+						while creating opportunities for emerging artists.
 					</h3>
 				</div>
 				<a href="#sisters">

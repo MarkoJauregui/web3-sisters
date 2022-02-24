@@ -1,5 +1,5 @@
 import './topbar.scss';
-import { Email, Twitter } from '@material-ui/icons';
+import { Email, Twitter, LinkedIn } from '@material-ui/icons';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 	return (
@@ -16,15 +16,21 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 						/>
 					</a>
 					<div className="itemContainer">
-						<Twitter className="icon" />
-						<a href="https://twitter.com/web3sisters">
-							<span>@web3sisters</span>
-						</a>
-					</div>
-					<div className="itemContainer">
 						<Email className="icon" />
 						<a href="mailto:contact@web3sisters.com">
 							<span>contact@web3sisters.com</span>
+						</a>
+					</div>
+					<div className="itemContainer">
+						<LinkedIn className="icon" />
+						<a href="https://www.linkedin.com/company/web3sisters">
+							<span>Web3Sisters</span>
+						</a>
+					</div>
+					<div className="itemContainer">
+						<Twitter className="icon" />
+						<a href="https://twitter.com/web3sisters">
+							<span>@web3sisters</span>
 						</a>
 					</div>
 				</div>
