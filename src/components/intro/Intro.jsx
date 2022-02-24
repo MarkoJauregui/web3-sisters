@@ -6,7 +6,8 @@ export default function Intro() {
 			<div className="left">
 				<div className="wrapper">
 					<h1>
-						Connecting artists to opportunities <br /> in the Web3 economy.{' '}
+						Connecting artists to <br /> opportunities in the <br /> Web3
+						economy.{' '}
 					</h1>
 				</div>
 				<a href="#description">

@@ -1,3 +1,72 @@
+@import "../../global.scss";
+
 .brands {
-    background-color: purple;
+    background-color: $bgColor;
+    display: flex;
+
+    .left{
+        flex: .6;
+        position: relative;
+        
+        .wrapper{
+            width: 80%;
+            height: 80%;
+            padding-left: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            overflow: hidden;
+
+            h1 {
+
+                font-size: 60px;
+                margin: 100px 0;
+                color: $textColor;
+
+            }
+
+            h3 {
+                font-size: 35px;
+                color: white;
+                padding-right: 20px;
+                font-weight: 400;
+            }
+        }
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+
+            img {
+                width: 50px;
+                animation: arrowBlink 2s infinite;
+
+            }
+
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .right{
+        flex: .4;
+        background-image: url('../../../public/assets/fondo2.jpg');
+        overflow: hidden;
+
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 120px;
+            margin-left: 40px;
+
+            img{
+                width: 90%;
+            }
+        }
+    }
 }

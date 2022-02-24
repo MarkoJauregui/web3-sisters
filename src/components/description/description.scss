@@ -1,3 +1,46 @@
+@import "../../global.scss";
+
 .description {
-    background-color: #585858;
+    background-color: $bgColor;
+    position: relative;
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 200px;
+        
+
+        h1{
+            font-size: 60px;
+            color: $textColor;
+            margin-bottom: 80px;
+            margin-top: 40px;
+            
+        }
+        h3{
+            font-size: 40px;
+            color: white;
+            font-weight: 400;
+        }
+
+        
+    }
+    a {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        img {
+            width: 50px;
+            animation: arrowBlink 2s infinite;
+
+        }
+
+        @keyframes arrowBlink {
+            100% {
+                opacity: 0;
+            }
+        }
+    }
 }
