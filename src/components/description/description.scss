@@ -3,12 +3,24 @@
 .description {
     background-color: $bgColor;
     position: relative;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
     .wrapper{
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
         padding: 0 200px;
+
+        @include mobile{
+            padding: 0 50px;
+        }
+
+        @include tablet {
+            padding: 0 50px;
+        }
         
 
         h1{
@@ -16,12 +28,33 @@
             color: $textColor;
             margin-bottom: 80px;
             margin-top: 40px;
+
+            @include mobile{
+                font-size: 40px;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+
+            @include tablet {
+                font-size: 60px;
+                margin-bottom: 30px;
+                margin-top: 40px;
+            }
             
         }
         h3{
             font-size: 40px;
             color: white;
             font-weight: 400;
+            @include mobile{
+                font-size:21px;
+                font-weight: 300;
+            }
+
+            @include tablet {
+                font-size: 35px;
+                font-weight: 300;
+            }
         }
 
         
@@ -30,6 +63,13 @@
         position: absolute;
         bottom: 10px;
         left: 50%;
+
+        @include mobile{
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
 
         img {
             width: 50px;

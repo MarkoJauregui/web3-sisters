@@ -16,22 +16,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 						/>
 					</a>
 					<div className="itemContainer">
-						<Email className="icon" />
 						<a href="mailto:contact@web3sisters.com">
-							<span>contact@web3sisters.com</span>
+							<Email className="icon" />
 						</a>
+						<span>contact@web3sisters.com</span>
 					</div>
 					<div className="itemContainer">
-						<LinkedIn className="icon" />
 						<a href="https://www.linkedin.com/company/web3sisters">
-							<span>Web3Sisters</span>
+							<LinkedIn className="icon" />
 						</a>
+						<span>Web3Sisters</span>
 					</div>
 					<div className="itemContainer">
-						<Twitter className="icon" />
 						<a href="https://twitter.com/web3sisters">
-							<span>@web3sisters</span>
+							<Twitter className="icon" />
 						</a>
+						<span>@web3sisters</span>
 					</div>
 				</div>
 

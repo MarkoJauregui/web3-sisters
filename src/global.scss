@@ -1,3 +1,19 @@
 $navColor: #2b2b2b;
 $bgColor: #3d3d3d;
 $textColor: #dbb42c;
+
+
+$phoneWidth: 480px;
+$tabletWidth: 1024px;
+
+@mixin mobile{
+    @media (max-width: $phoneWidth){
+        @content
+    }
+};
+
+@mixin tablet {
+    @media (min-width: 728px) and (max-width: $tabletWidth) {
+        @content
+    }
+}

@@ -5,6 +5,17 @@
     
     background-image: url('../../../public//assets/fondo1.jpg');
     display: flex;
+    
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left{
         flex: 0.5;
@@ -13,15 +24,28 @@
         .wrapper{
             width: 100%;
             height: 100%;
-            margin-left: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            @include mobile{
+                margin-left: 0;
+            }
+            @include tablet {
+                margin-left: 0;
+            }
 
             h1{
-                font-size: 50px;
+                font-size: 60px;
                 margin: 20px 0;
                 color: white;
+
+                @include mobile{
+                    font-size: 35px;
+                }
+                @include tablet {
+                    font-size: 55px;
+                }
             }
             
         }
@@ -29,6 +53,12 @@
             position: absolute;
             bottom: 10px;
             left: 50%;
+            @include mobile{
+                display: none;
+            }
+            @include tablet {
+                display: none;
+            }
             img{
                 width: 50px;
                 animation: arrowBlink 2s infinite;
@@ -50,10 +80,37 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            float: center;
+            
             margin-top: 60px;
+
+            @include mobile{
+                align-items: flex-start;
+                display: flex;
+                margin-top: 0;
+            }
+
+            @include tablet {
+                align-items: flex-start;
+                display: flex;
+                margin-top: 0;
+                overflow-y: hidden;
+            }
+
             img{
                 width: 100%;
+                
+                @include mobile{
+                    height: 40%;
+                    width: 80%;
+                    position: absolute;
+                }
+
+                @include tablet {
+                    height: 45%;
+                    width: 65%;
+                    position: absolute;
+                    
+                }
             }
         }
     }
