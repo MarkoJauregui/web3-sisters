@@ -21,6 +21,10 @@
         @include tablet {
             padding: 0 50px;
         }
+
+        @include Smlaptop {
+            padding: 0 50px;
+        }
         
 
         h1{
@@ -36,23 +40,38 @@
             }
 
             @include tablet {
-                font-size: 60px;
+                font-size: 55px;
                 margin-bottom: 30px;
                 margin-top: 40px;
+            }
+
+            @include Smlaptop {
+                font-size: 55px;
+                margin-bottom: 30px;
+                margin-top: 40px;
+            }
+
+            @include Bglaptop{
+                margin-bottom: 15px;
             }
             
         }
         h3{
             font-size: 40px;
             color: white;
-            font-weight: 400;
+            font-weight: 300;
             @include mobile{
                 font-size:21px;
                 font-weight: 300;
             }
 
             @include tablet {
-                font-size: 35px;
+                font-size: 32px;
+                font-weight: 300;
+            }
+
+            @include Smlaptop {
+                font-size: 34px;
                 font-weight: 300;
             }
         }

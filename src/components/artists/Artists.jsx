@@ -17,7 +17,7 @@ const Artists = () => {
 		<div className="artists" id="artists">
 			<div className="left">
 				<div className="imgContainer">
-					<img src="assets/pamelaanteojos3D.png" alt="web3sister" />
+					<img src="assets/Pamela3D.png" alt="web3sister" />
 				</div>
 			</div>
 			<div className="right">

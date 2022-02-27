@@ -23,7 +23,7 @@
         }
 
         @include tablet {
-            flex: .7;
+            flex: .6;
         }
         
         .wrapper{
@@ -53,28 +53,44 @@
                     margin-bottom: 15px;
                 }
                 @include tablet {
-                    font-size: 40px;
+                    font-size: 30px;
                     margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+
+                @include Smlaptop {
+                    font-size: 45px;
+                    margin: 40px 0;
+                }
+
+                @include Bglaptop {
+                    
+                    margin-top: 40px;
                     margin-bottom: 30px;
                 }
             }
 
             h3 {
-                font-size: 35px;
+                font-size: 30px;
                 color: white;
                 padding-right: 20px;
                 font-weight: 400;
 
                 @include mobile {
-                    font-size: 19px;
+                    font-size: 17px;
                     font-weight: 300;
                     padding-right: 0;
                     
                 }
                 @include tablet {
-                    font-size: 26px;
+                    font-size: 22px;
                     font-weight: 300;
                     padding-right: 0;
+                }
+
+                @include Smlaptop {
+                    font-size: 22px;
+                    margin: 30px 0;
                 }
             }
         }
@@ -114,7 +130,7 @@
         }
 
         @include tablet {
-            flex: .3;
+            flex: .4;
             width: 100%;
         }
 
@@ -133,7 +149,11 @@
 
             @include tablet {
                 margin: 0;
-                margin-left: 50px;
+                
+            }
+
+            @include Bglaptop{
+                margin-left: 0;
             }
 
             img{
@@ -147,6 +167,22 @@
                 @include tablet {
                     width: 50%;
                     height: 50%;
+                    margin-left: 70px;
+                }
+
+                @include Smlaptop {
+                    height: 65%;
+                    width: 65%;
+                    margin-left: 0;
+                    margin-top: 40px;
+                    margin-right: 320px ;
+
+                }
+
+                @include Bglaptop {
+                    margin-top: 40px;
+                    margin-right: 140px;
+
                 }
             }
         }

@@ -4,7 +4,7 @@ $textColor: #dbb42c;
 
 
 $phoneWidth: 480px;
-$tabletWidth: 1024px;
+$tabletWidth: 1023px;
 
 @mixin mobile{
     @media (max-width: $phoneWidth){
@@ -16,4 +16,17 @@ $tabletWidth: 1024px;
     @media (min-width: 728px) and (max-width: $tabletWidth) {
         @content
     }
+};
+
+@mixin Smlaptop {
+    @media (min-width: 1024px) and (max-width: 1200px){
+        @content
+    }
+};
+
+@mixin Bglaptop {
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        @content
+    }
 }
+

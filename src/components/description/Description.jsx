@@ -15,7 +15,6 @@ export default function Description() {
 					market.
 					<br />
 					<br />
-					<br />
 					We encourage the participation of brands, companies and institutions
 					as partners in this mission by developing strategies, events and
 					activations that establish mutually beneficial relationships with
