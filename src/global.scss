@@ -7,7 +7,7 @@ $phoneWidth: 480px;
 $tabletWidth: 1023px;
 
 @mixin mobile{
-    @media (max-width: $phoneWidth){
+    @media (min-width:320px) and (max-width: $phoneWidth){
         @content
     }
 };
